@@ -1,0 +1,51 @@
+html{
+    font-family:'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3{
+    font-family: 'Lora', serif;
+    color: #111;
+}
+
+h1{
+    font-size: 0.875rem;
+    margin: 1.5rem 1rem;
+}
+
+.header{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #c6c6c6;
+}
+
+.header-logo{
+    margin: 0;
+    padding: 0rem;
+}
+
+.container-title{
+    display: flex;
+    padding: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-images{
+    display: flex;
+    padding: 0rem;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow-y: scroll;
+}
+
+
