@@ -15,9 +15,9 @@ h3{
     color: #111;
 }
 
-h1{
-    font-size: 0.875rem;
-    margin: 1.5rem 1rem;
+.product-title{
+    font-size: 1.25rem;
+    margin: 1rem 1rem;
     font-weight: 400;
 }
 
@@ -46,13 +46,6 @@ h1{
     padding: 0rem;
 }
 
-.container-title{
-    display: flex;
-    padding: 1rem;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 .product-images{
     display: flex;
     padding: 0rem;
@@ -65,25 +58,26 @@ h1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 1rem 0;
+    padding: 1rem 1rem 0;
 }
 
 .product-price{
-    text-transform: none;
-    font-size: 1.125rem;
-    line-height: 1.3125rem;
     margin: 0;
+
+    text-transform: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.1875;
 }
 
 .product-article{
+    margin: 0;
     font-size: 0.75rem;
     line-height: 0.875rem;
-    margin: 0;
 }
 
 .container-product-color{
     padding: 1rem 1rem 0;
-    
 }
 
 .product-color-description{
@@ -119,14 +113,15 @@ h1{
     flex-basis: 2.75rem;
     padding: 1rem;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .product-button{
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 0.9rem;
     font-size: 0.75rem;
     line-height: 0.875rem;
+    font-family: 'Raleway','Helvetica Neue','Arial', sans-serif;
     box-sizing: border-box;
 }
 
@@ -139,12 +134,13 @@ h1{
 .product-store{
     background-color: #ffffff;
     border: solid 1px #999999;
+    margin-bottom:1.5rem;
 }
 
 .product-help{
     padding:0;
-    margin:0;
     flex-basis: 0;
+    line-height: 0.875rem;
     border: none;
     background: none;
     text-align: left;
@@ -154,6 +150,10 @@ h1{
 .product-info{
     /*flex-direction: row;*/
     border-top: solid 1px #c6c6c6;
+}
+
+.product-info + .product-info {
+  border-bottom: solid 1px #c6c6c6;
 }
 
 .product-info:last-of-type {
@@ -169,8 +169,7 @@ h1{
 
 .product-info-title-text{
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 0.875rem;
-    line-height: 1rem;
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
     color: #171717;
@@ -196,8 +195,15 @@ h1{
 
 .recommendation-title{
     display: inline-block;
-    vertical-align: middle;
+    font-family: 'Raleway','Helvetica Neue','Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    /* vertical-align: middle; */
     border-bottom: 1px solid #171717; 
+    margin-bottom:1.5rem;
+    margin-top:2rem;
 }
 
 .recommendation-items{
@@ -207,6 +213,7 @@ h1{
 }
 
 .recommendation-item{
+    margin-bottom: 1.5rem;
     flex-basis: 8.125rem;
 }
 
@@ -216,17 +223,88 @@ h1{
 }
 
 .recommendation-item-title{
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 
     font-family: 'Lora', serif;
     font-size: 1rem;
-    line-height: 1.5rem;
+    font-weight: 400;
 }
 
 .recommendation-item-price{
-    margin-top: 0;
+    margin: 0;
     font-family: 'Raleway','Helvetica Neue','Arial', sans-serif;
+    font-size: 0.75rem;
+    color: #999;
+}
+
+.offers{
+    padding-left: 0.5rem;
+}
+
+.offers-title{
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #171717;
+    padding-bottom: 0.5rem;
+    margin: 0;
+}
+
+.offers-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top:1.5rem;
+}
+
+.offers-item{
+    display: block;
+    margin-bottom: 1rem;
+    
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    font-size: 0.85rem;
+    font-style: italic;
+    text-decoration: none;
+    color: #171717;
+}
+
+.footer{
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+    background-color: #f3f3f3;
+}
+
+.footer-btn{
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0;
+    border: none;
+    background-color: #f3f3f3;
+    color: #999999;
+    font-family: Raleway, serif;
+    font-weight: 400;
     font-size: 0.75rem;
 }
 
+.footer-help-info{
+    margin-top:1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-contact-info{
+    display: block;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    font-size: 0.875rem;
+    font-style: italic;
+    color: #171717;
+}
