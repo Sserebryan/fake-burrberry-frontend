@@ -9,9 +9,7 @@ body {
 }
 
 /*
-
 Header
-
 */
 
 .header {
@@ -23,11 +21,6 @@ Header
   border-bottom: solid 1px #c6c6c6;
 }
 
-.header-logo {
-  padding: 0;
-  margin: 0;
-}
-
 @media (min-width: 48rem){
   .header{
     padding: 1.5rem;
@@ -35,13 +28,11 @@ Header
 }
 
 /*
-
 Product title
-
 */
 
 .product-title {
-  margin: 1rem 1rem;
+  margin: 1rem .5rem;
 
   font-size: 1.25rem;
   line-height: 1.2;
@@ -52,8 +43,7 @@ Product title
 
 @media (min-width: 48rem){
   .product-title{
-    margin: 1.5rem;
-    margin-left: .5rem;
+    margin: 1.5rem 0;
 
     font-size: 1.5rem;
     line-height: 1.17;
@@ -61,42 +51,36 @@ Product title
 }
 
 /*
-
 Product gallery
-
 */
 
 .product-gallery {
   display: flex;
-  margin: 0;
-  overflow-y: scroll;
-
-  margin-left: -0.5rem;
-	margin-right: -0.5rem;
+  margin: 0 -1rem;
+  overflow-x: scroll;
 }
 
 .product-gallery-photo{
-  height: auto;
-  width: 100%;
+  display: block;
+  flex-shrink: 0;
+  width: auto;
+  height: 400px;
 
-  vertical-align: middle;
+  object-fit: contain;;
 }
 
  @media (min-width: 48rem){
   .product-gallery{
     margin:0;
-    height: 576px;
   }
 
   .product-gallery-photo{
-    min-width:432px;
+    height: 576px;
   }
 } 
 
 /*
-
 Product price section
-
 */
 
 .product-price {
@@ -133,9 +117,7 @@ Product price section
 } 
 
 /*
-
 Product colour section
-
 */
 
 .product-colour {
@@ -189,9 +171,7 @@ Product colour section
 }
 
 /*
-
 Product activity section
-
 */
 
 .product-activity {
@@ -249,9 +229,7 @@ Product activity section
 }
 
 /*
-
 Product info section
-
 */
 
 .product-info {
@@ -443,8 +421,6 @@ Recommendation section
   margin: 0;
   display: block;
   width:100%;
-
-  vertical-align: top; 
 }
 
 .recommendation-product-title {
@@ -644,9 +620,12 @@ Footer section
     color: #999999;
   }
 
+  .footer-buttons{
+    display: flex;
+  }
+
   .footer-button{
-    margin-left: .5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 
   .footer-help-info{
