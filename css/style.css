@@ -66,7 +66,7 @@ Product gallery
   width: auto;
   height: 400px;
 
-  object-fit: contain;;
+  object-fit: contain;
 }
 
  @media (min-width: 48rem){
