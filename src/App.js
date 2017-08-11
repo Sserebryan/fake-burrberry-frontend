@@ -6,6 +6,7 @@ import Header from './Header'
 import Product from './Product'
 import Footer from './Footer'
 import Recommendation from './Recommendation'
+import Delivery from './Delivery'
 
 const recommendations = [
   {
@@ -43,6 +44,7 @@ class App extends Component {
         </Helmet>
         <Header/>
         <Product/>
+        <Delivery/>
         <Recommendation recommendations={recommendations}/>
         <Footer/>
         
