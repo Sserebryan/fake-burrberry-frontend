@@ -52,8 +52,16 @@ const Texts = [
   "The piece is finished with a distinctive check undercollar."
 ];
 
-const List = ["Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.",
-"Outer: 100% cotton","Check lining: 100% cotton","Sleeve lining: 100% viscose","Buttons: buffalo horn","Specialist dry clean","Made in Europe","Item 39428531"];
+const List = [
+  "Coat length: 98cm/38.6in. This is based on a size UK 48 as proportions change slightly according to size.",
+  "Outer: 100% cotton",
+  "Check lining: 100% cotton",
+  "Sleeve lining: 100% viscose",
+  "Buttons: buffalo horn",
+  "Specialist dry clean",
+  "Made in Europe",
+  "Item 39428531"
+];
 
 export default () =>
   <section>
@@ -78,6 +86,6 @@ export default () =>
         </div>
       </div>
     </div>
-    <Info text={Text} list={List} titleName="Description"/>
-    <Info isShipping={true} titleName="Shipping & returns"/>
+    <Info text={Text} list={List} titleName="Description" />
+    <Info isShipping={true} titleName="Shipping & returns" />
   </section>;
